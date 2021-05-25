@@ -1,55 +1,11 @@
 % ---- PACKAGES --------------------------------------------------------------------------------------------------------
 
-% indispensable pour l'encodage des caractères
-\usepackage[utf8]{inputenc}
-\usepackage[T1]{fontenc}
-
-%\usepackage[titlepage, pagenumber]{polytechnique}                  
-                                            % pour faire des beaux documents avec la charte graphique de l'X
-
-%\usepackage{lipsum}                         % utile our générer du faux texte
-%\usepackage{url}                            % pour insérer des url
-
-% packages de configuration des pages
-%\usepackage[left=3.5cm,right=2cm,top=2cm,bottom=2.5cm]{geometry}
-                                            %réglages des marges du document selon vos préférences ou celles de votre établissement
-%\usepackage{multicol}
-
-% packages graphiques
-\usepackage{graphicx}                       % pour insérer images et pdf entre autres
-%\usepackage{color}                          % pour rajouter des joulis couleurs
-%\usepackage{photo}                          % pour rajouter des photos
-
-% packages scientifiques
-%\usepackage{amsmath}                        % extensions de l'ams pour les mathématiques
-%\usepackage{amsfonts}
-%\usepackage{amssymb}       
-%\usepackage{amsthm}                         % pour rajouter des theoremes et tout ce qui va avec
-
-\usepackage[french]{babel}                  % pour un document en français, attention à bien le mettre à la fin !
-
-% packages à insérer uniquement après babel
-%\usepackage{listings}                       % pour insérer du code source
-
-%\usepackage{hyperref}                       % rend actif les liens, références croisées, toc…
+\input{0-preambule/01-packages/packages.tex}
 
 % ---- MACROS ---------------------------------------------------------------------------------------------------------
 
-% Renomme ces sections pour quelque chose de plus français
-\addto{\captionsfrench}{\renewcommand{\abstractname}{Résumé}}
-\addto{\captionsfrench}{\renewcommand{\contentsname}{Sommaire}} % a remettre en table des matieres si placee a la fin
-
-%Commandes personnalisées
-\newcommand\nom[2]{#1 \textsc{#2}}
+\input{0-preambule/02-macros/macros.tex}
 
 % ---- METADATA --------------------------------------------------------------------------------------------------------
 
-% titre et sous-titre pour package polytechnique
-%\title[Titre plus court]{Titre complet} 
-%\subtitle{Sous-titre}
-
-\title{My document}
-\author{\nom{Léo}{Guillon}}
-\date{}
-
-%\logo[headers]{images/logos/poly.jpg} % logo pour package polytechnique
+\input{0-preambule/03-metadata/metadata.tex}
