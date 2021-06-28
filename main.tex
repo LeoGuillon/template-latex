@@ -1,17 +1,23 @@
 \documentclass[a4paper, 11pt]{article}
 
+\include{preambule/preambule.tex}
+
+
+% to be commented depending on the parts you're working on
 \includeonly{
-    0-preambule/preambule.tex, 
-    1-title-page/title-page.tex,
-    2-abstract/abstract.tex    
+    title-page/title-page.tex,
+    abstract/abstract.tex    
 }
-\include{0-preambule/preambule.tex}
 
 \begin{document}
-    
-\include{1-title-page/title-page.tex}
-\include{2-abstract/abstract.tex}
 
-\tableofcontents
+
+\include{title-page/title-page.tex}
+
+\include{abstract/abstract.tex}
+
+\include{tables/tables.tex}
+
+\appendix
 
 \end{document}
